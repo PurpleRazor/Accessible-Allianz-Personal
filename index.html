@@ -19,7 +19,7 @@
     <title>Allianz Accessibility</title>
   </head>
   <body class="">
-    <button id="neuroMode" class="switch-mode-style">NeuroMode 🧠</button>
+    <button class="switch-mode-style">Switch Theme</button>
     <div class="canvas">
       <div class="container">
         <h2>Allianz UK News</h2>
@@ -87,4 +87,18 @@
       </div>
     </div>
   </body>
+  <script>
+    function switchToNeuroMode() {
+      let container = document.querySelector(".container");
+
+      if (container.classList.contains("neuro")) {
+        container.classList.remove("neuro");
+      } else {
+        container.classList.add("neuro");
+      }
+    }
+
+    let switchTheme = document.querySelector(".switch-mode-style");
+    switchTheme.addEventListener("click", switchToNeuroMode);
+  </script>
 </html>
