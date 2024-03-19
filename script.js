@@ -1,4 +1,4 @@
-function SwitchToNeuroMode() {
+function switchToNeuroMode() {
   let container = document.querySelector(".container");
 
   if (container.classList.contains("neuro")) {
@@ -7,5 +7,5 @@ function SwitchToNeuroMode() {
     container.classList.add("neuro");
   }
 }
-let NeuroMode = document.querySelector("button");
-NeuroMode.addEventListener("click", SwitchToNeuroMode);
+let button = document.querySelector("#neuroMode");
+button.addEventListener("click", switchToNeuroMode);
